@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+    <template id="login" inherit_id="web.login" name="Custom Login" >
+      <xpath expr="//form[hasclass('oe_login_form')]" position="before">
+        <t t-set="disable_footer">1</t>
+      </xpath>
+    </template>
+  </data>
+</odoo>
